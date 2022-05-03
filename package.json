@@ -1,0 +1,47 @@
+{
+    "name": "functions",
+    "description": "Cloud Functions for Firebase",
+    "scripts": {
+        "lint": "esw .",
+        "serve": "firebase serve --only functions",
+        "shell": "firebase functions:shell",
+        "start": "npm run shell",
+        "deploy": "firebase deploy --only functions",
+        "logs": "firebase functions:log",
+        "test": "mocha --timeout=10000"
+    },
+    "engines": {
+        "node": "10"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.900.0",
+        "axios": "^0.21.1",
+        "blob-to-sha256": "0.0.1",
+        "busboy": "^0.3.1",
+        "crypto": "^1.0.1",
+        "dayjs": "^1.8.22",
+        "fetch-base64": "^2.1.2",
+        "firebase-admin": "^8.6.0",
+        "firebase-functions": "^3.3.0",
+        "generate-password": "^1.5.1",
+        "gtoken": "^5.0.1",
+        "js-md5": "^0.7.3",
+        "moment": "^2.29.1",
+        "mp3-duration": "^1.1.0",
+        "node-fetch": "^2.6.0",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.5",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "@firebase/testing": "^0.16.5",
+        "babel-eslint": "^10.0.3",
+        "chai": "^4.2.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-watch": "^6.0.1",
+        "firebase-functions-test": "^0.1.6",
+        "mocha": "^7.0.0"
+    },
+    "private": true
+}
